@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DouPress 是一款开源、简洁、高效的博客管理系统，采用文本数据库存储，无需数据库支持，上传即用，备份方便。">
+    <meta name="keywords" content="博客系统,个人博客,开源博客,PHP博客,DouPress,程江博客">
+    <meta name="author" content="DouPress">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="DouPress - 简洁高效的博客管理系统">
+    <meta property="og:description" content="DouPress 是一款开源、简洁、高效的博客管理系统，采用文本数据库存储，无需数据库支持，上传即用，备份方便。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.doupress.org">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="DouPress - 简洁高效的博客管理系统">
+    <meta name="twitter:description" content="DouPress 是一款开源、简洁、高效的博客管理系统，采用文本数据库存储，无需数据库支持，上传即用，备份方便。">
+    <title>DouPress - 简洁高效的博客管理系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="https://doupress.org">DouPress</a>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <label for="nav-toggle" class="nav-toggle" aria-label="切换导航">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#features">特性</a></li>
+                <li><a href="#structure">结构</a></li>
+                <li><a href="#install">安装</a></li>
+                <li><a href="#demo">演示</a></li>
+                <li><a href="https://github.com/DouPress/DouPress" target="_blank">GitHub</a></li>
+                <li><a href="https://gitee.com/doupress/doupress" target="_blank">Gitee</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-inner">
+                <h1>DouPress</h1>
+                <!-- <p class="subtitle">程江®博客管理系统</p> -->
+                <p class="desc">开源、简洁、高效的博客程序，采用文本数据库存储，无需数据库支持，上传即用，备份方便。</p>
+                <div class="hero-actions">
+                    <a href="#install" class="btn btn-primary">快速开始</a>
+                    <a href="https://github.com/DouPress/DouPress" class="btn btn-secondary" target="_blank">查看源码</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>核心特性</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📦</div>
+                    <h3>无需数据库</h3>
+                    <p>只要求 PHP 环境，文本数据库存储，上传即可运行，摆脱数据库依赖。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👤</div>
+                    <h3>个人博客设计</h3>
+                    <p>专为个人网站打造，剔除复杂的成员管理和权限设置，专注内容创作。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🏷️</div>
+                    <h3>标签代替分类</h3>
+                    <p>只有标签没有分类，免除发布文章时该如何分类的纠结。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✏️</div>
+                    <h3>极简内容系统</h3>
+                    <p>只有"文章"和"页面"两个系统，没有评论、插件等干扰，让你更专注于创造内容。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <h3>备份还原简便</h3>
+                    <p>下载上传全部文件即可完成备份和还原，所有文章配置完整保留。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h3>多主题支持</h3>
+                    <p>支持多主题切换，可自定义网站外观，满足个性化需求。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="structure" class="structure">
+            <div class="structure-inner">
+                <h2>项目结构</h2>
+                <pre class="code-block"><code>/src/
+├── index.php        # 入口文件
+├── admin/           # 后台管理
+├── core/            # 核心
+├── data/            # 内容数据
+│   ├── config.php   # 配置文件
+│   ├── posts/       # 文章
+│   └── pages/       # 页面
+├── theme/           # 主题目录
+└── install.php      # 安装文件</code></pre>
+            </div>
+        </section>
+
+        <section id="install" class="install">
+            <h2>快速安装</h2>
+            <ol class="install-steps">
+                <li>
+                    <span class="step-num">1</span>
+                    <div class="step-content">
+                        <h3>下载安装脚本</h3>
+                        <p>下载最新版的 install.php，上传到网站根目录</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="step-num">2</span>
+                    <div class="step-content">
+                        <h3>访问安装页面</h3>
+                        <p>浏览器访问 <code>http://example.com/install.php</code></p>
+                    </div>
+                </li>
+                <li>
+                    <span class="step-num">3</span>
+                    <div class="step-content">
+                        <h3>完成安装</h3>
+                        <p>填入网站信息和初始账号密码，开始使用</p>
+                    </div>
+                </li>
+            </ol>
+            <div class="install-cmd">
+                <p>构建安装包：</p>
+                <code>php build.php [版本号]</code>
+            </div>
+        </section>
+
+        <section id="demo" class="demo">
+            <div class="demo-inner">
+                <h2>演示网站</h2>
+                <div class="demo-grid">
+                    <a href="http://help.uiisc.com/" target="_blank" class="demo-item">
+                        <div class="demo-icon">🌐</div>
+                        <h3>help.uiisc.com</h3>
+                        <p>帮助文档演示</p>
+                    </a>
+                    <a href="http://blog.uiisc.com/" target="_blank" class="demo-item">
+                        <div class="demo-icon">📝</div>
+                        <h3>blog.uiisc.com</h3>
+                        <p>博客演示站点</p>
+                    </a>
+                    <a href="http://doupress.hnm.cc/" target="_blank" class="demo-item">
+                        <div class="demo-icon">🎯</div>
+                        <h3>doupress.hnm.cc</h3>
+                        <p>官方演示站点</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <strong>DouPress</strong> - 简洁高效的博客管理系统
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/DouPress/DouPress" target="_blank">GitHub</a>
+                <a href="https://gitee.com/doupress/doupress" target="_blank">Gitee</a>
+                <a href="http://doupress.org/" target="_blank">官方网站</a>
+                <a href="https://github.com/DouPress/DouPress/issues" target="_blank">问题反馈</a>
+                <a href="https://github.com/DouPress/DouPress/pulls" target="_blank">参与贡献</a>
+            </div>
+            <div class="footer-license">
+                MIT License
+            </div>
+            <div class="footer-copyright">
+                © 2026 DouPress All Rights Reserved.
+            </div>
+            <div class="footer-powered">
+                Powered by <a href="https://crogram.org" target="_blank">Crogram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
