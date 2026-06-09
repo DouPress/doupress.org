@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DouPress - 简洁高效的博客管理系统</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <a href="/">DouPress</a>
+                <a href="https://doupress.org">DouPress</a>
             </div>
             <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
             <label for="nav-toggle" class="nav-toggle" aria-label="切换导航">
@@ -22,19 +24,23 @@
                 <li><a href="#features">特性</a></li>
                 <li><a href="#structure">结构</a></li>
                 <li><a href="#install">安装</a></li>
+                <li><a href="#demo">演示</a></li>
                 <li><a href="https://github.com/DouPress/DouPress" target="_blank">GitHub</a></li>
+                <li><a href="https://gitee.com/doupress/doupress" target="_blank">Gitee</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
         <section class="hero">
-            <h1>DouPress</h1>
-            <p class="subtitle">程江®博客管理系统</p>
-            <p class="desc">开源、简洁、高效的博客程序，采用文本数据库存储，无需数据库支持，上传即用，备份方便。</p>
-            <div class="hero-actions">
-                <a href="#install" class="btn btn-primary">快速开始</a>
-                <a href="https://github.com/DouPress/DouPress" class="btn btn-secondary" target="_blank">查看源码</a>
+            <div class="hero-inner">
+                <h1>DouPress</h1>
+                <!-- <p class="subtitle">程江®博客管理系统</p> -->
+                <p class="desc">开源、简洁、高效的博客程序，采用文本数据库存储，无需数据库支持，上传即用，备份方便。</p>
+                <div class="hero-actions">
+                    <a href="#install" class="btn btn-primary">快速开始</a>
+                    <a href="https://github.com/DouPress/DouPress" class="btn btn-secondary" target="_blank">查看源码</a>
+                </div>
             </div>
         </section>
 
@@ -75,8 +81,9 @@
         </section>
 
         <section id="structure" class="structure">
-            <h2>项目结构</h2>
-            <pre class="code-block"><code>/src/
+            <div class="structure-inner">
+                <h2>项目结构</h2>
+                <pre class="code-block"><code>/src/
 ├── index.php        # 入口文件
 ├── admin/           # 后台管理
 ├── core/            # 核心
@@ -86,6 +93,7 @@
 │   └── pages/       # 页面
 ├── theme/           # 主题目录
 └── install.php      # 安装文件</code></pre>
+            </div>
         </section>
 
         <section id="install" class="install">
@@ -118,6 +126,29 @@
                 <code>php build.php [版本号]</code>
             </div>
         </section>
+
+        <section id="demo" class="demo">
+            <div class="demo-inner">
+                <h2>演示网站</h2>
+                <div class="demo-grid">
+                    <a href="http://help.uiisc.com/" target="_blank" class="demo-item">
+                        <div class="demo-icon">🌐</div>
+                        <h3>help.uiisc.com</h3>
+                        <p>帮助文档演示</p>
+                    </a>
+                    <a href="http://blog.uiisc.com/" target="_blank" class="demo-item">
+                        <div class="demo-icon">📝</div>
+                        <h3>blog.uiisc.com</h3>
+                        <p>博客演示站点</p>
+                    </a>
+                    <a href="http://doupress.hnm.cc/" target="_blank" class="demo-item">
+                        <div class="demo-icon">🎯</div>
+                        <h3>doupress.hnm.cc</h3>
+                        <p>官方演示站点</p>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -127,6 +158,8 @@
             </div>
             <div class="footer-links">
                 <a href="https://github.com/DouPress/DouPress" target="_blank">GitHub</a>
+                <a href="https://gitee.com/doupress/doupress" target="_blank">Gitee</a>
+                <a href="http://doupress.org/" target="_blank">官方网站</a>
                 <a href="https://github.com/DouPress/DouPress/issues" target="_blank">问题反馈</a>
                 <a href="https://github.com/DouPress/DouPress/pulls" target="_blank">参与贡献</a>
             </div>
@@ -134,9 +167,13 @@
                 MIT License
             </div>
             <div class="footer-copyright">
-                © 2024 DouPress 程江®保留所有权利
+                © 2026 DouPress All Rights Reserved.
+            </div>
+            <div class="footer-powered">
+                Powered by <a href="https://crogram.org" target="_blank">Crogram</a>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
